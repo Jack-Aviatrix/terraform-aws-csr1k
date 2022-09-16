@@ -12,3 +12,7 @@ output "csr_instance" {
   description = "The created CSR instance as an object with all of it's attributes."
   value       = aws_instance.this
 }
+
+output "elastic_ip" {
+  value = aws_eip.default.public_ip
+}
